@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AF821F4F23303FBE007EDF1B /* MNIST.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AF821F4E23303FBE007EDF1B /* MNIST.mlmodel */; };
 		AF88C455232B84DE000EA2B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF88C454232B84DE000EA2B0 /* AppDelegate.swift */; };
 		AF88C457232B84DE000EA2B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF88C456232B84DE000EA2B0 /* ViewController.swift */; };
 		AF88C45A232B84DE000EA2B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF88C458232B84DE000EA2B0 /* Main.storyboard */; };
@@ -17,7 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AF821F4E23303FBE007EDF1B /* MNIST.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MNIST.mlmodel; sourceTree = "<group>"; };
 		AF88C451232B84DE000EA2B0 /* Salarize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salarize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF88C454232B84DE000EA2B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF88C456232B84DE000EA2B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,7 +61,6 @@
 				AF88C458232B84DE000EA2B0 /* Main.storyboard */,
 				AF88C45E232B84E0000EA2B0 /* Assets.xcassets */,
 				AF88C460232B84E0000EA2B0 /* LaunchScreen.storyboard */,
-				AF821F4E23303FBE007EDF1B /* MNIST.mlmodel */,
 				AF88C463232B84E0000EA2B0 /* Info.plist */,
 				AF88C45B232B84DE000EA2B0 /* Salarize.xcdatamodeld */,
 			);
@@ -141,7 +138,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF821F4F23303FBE007EDF1B /* MNIST.mlmodel in Sources */,
 				AF88C45D232B84DE000EA2B0 /* Salarize.xcdatamodeld in Sources */,
 				AF88C457232B84DE000EA2B0 /* ViewController.swift in Sources */,
 				AF88C455232B84DE000EA2B0 /* AppDelegate.swift in Sources */,
