@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DAEDE73C46ADA2C2BAFF5E4 /* Pods_Salarize.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC9A58B20D4B369D161EB22 /* Pods_Salarize.framework */; };
 		AF88C455232B84DE000EA2B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF88C454232B84DE000EA2B0 /* AppDelegate.swift */; };
 		AF88C457232B84DE000EA2B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF88C456232B84DE000EA2B0 /* ViewController.swift */; };
 		AF88C45A232B84DE000EA2B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF88C458232B84DE000EA2B0 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11209C842046745167DFB255 /* Pods-Salarize.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salarize.debug.xcconfig"; path = "Target Support Files/Pods-Salarize/Pods-Salarize.debug.xcconfig"; sourceTree = "<group>"; };
+		395D9BA7FC4E30116BB7656F /* Pods-Salarize.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salarize.release.xcconfig"; path = "Target Support Files/Pods-Salarize/Pods-Salarize.release.xcconfig"; sourceTree = "<group>"; };
 		AF88C451232B84DE000EA2B0 /* Salarize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salarize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF88C454232B84DE000EA2B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF88C456232B84DE000EA2B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		AF88C45E232B84E0000EA2B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF88C461232B84E0000EA2B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF88C463232B84E0000EA2B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCC9A58B20D4B369D161EB22 /* Pods_Salarize.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Salarize.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DAEDE73C46ADA2C2BAFF5E4 /* Pods_Salarize.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				AF88C453232B84DE000EA2B0 /* Salarize */,
 				AF88C452232B84DE000EA2B0 /* Products */,
+				CCFB313E336108E1A7623903 /* Pods */,
+				C481198727CBA1BE7ED279D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = Salarize;
 			sourceTree = "<group>";
 		};
+		C481198727CBA1BE7ED279D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCC9A58B20D4B369D161EB22 /* Pods_Salarize.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCFB313E336108E1A7623903 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11209C842046745167DFB255 /* Pods-Salarize.debug.xcconfig */,
+				395D9BA7FC4E30116BB7656F /* Pods-Salarize.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF88C466232B84E0000EA2B0 /* Build configuration list for PBXNativeTarget "Salarize" */;
 			buildPhases = (
+				50407986D049313FF2CA2C8D /* [CP] Check Pods Manifest.lock */,
 				AF88C44D232B84DE000EA2B0 /* Sources */,
 				AF88C44E232B84DE000EA2B0 /* Frameworks */,
 				AF88C44F232B84DE000EA2B0 /* Resources */,
+				A7D167D7C2C619847A90644D /* [CP] Embed Pods Frameworks */,
+				31B459B8C4E32B3856FDBE02 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +160,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31B459B8C4E32B3856FDBE02 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Salarize/Pods-Salarize-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Salarize/Pods-Salarize-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Salarize/Pods-Salarize-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50407986D049313FF2CA2C8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Salarize-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7D167D7C2C619847A90644D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Salarize/Pods-Salarize-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Salarize/Pods-Salarize-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Salarize/Pods-Salarize-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AF88C44D232B84DE000EA2B0 /* Sources */ = {
@@ -284,6 +371,7 @@
 		};
 		AF88C467232B84E0000EA2B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11209C842046745167DFB255 /* Pods-Salarize.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +390,7 @@
 		};
 		AF88C468232B84E0000EA2B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 395D9BA7FC4E30116BB7656F /* Pods-Salarize.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
