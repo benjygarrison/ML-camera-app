@@ -49,31 +49,31 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     func detectImage(image: CIImage) {
         
-        guard let model = try? VNCoreMLModel(for: MNIST().model) else {
-            fatalError("Could not load data model.")
-        }
-        
-        let request = VNCoreMLRequest(model: model) { (request, error) in
-            guard let results = request.results as? [VNClassificationObservation] else{
-                fatalError("Could not classify observation.")
-            }
-            
-            print(results)
-            
-            if let topHit = results.first {
-                self.priceLabel.text = topHit.identifier
-            } else {
-                self.priceLabel.text = ""
-            }
-        }
-        
-        let handler = VNImageRequestHandler(ciImage:  image)
-        
-        do {
-        try handler.perform([request])
-        } catch {
-            print(error)
-        }
+//        guard let model = try? VNCoreMLModel(for: MNIST().model) else {
+//            fatalError("Could not load data model.")
+//        }
+//
+//        let request = VNCoreMLRequest(model: model) { (request, error) in
+//            guard let results = request.results as? [VNClassificationObservation] else{
+//                fatalError("Could not classify observation.")
+//            }
+//
+//            print(results)
+//
+//            if let topHit = results.first {
+//                self.priceLabel.text = topHit.identifier
+//            } else {
+//                self.priceLabel.text = ""
+//            }
+//        }
+//
+//        let handler = VNImageRequestHandler(ciImage:  image)
+//
+//        do {
+//        try handler.perform([request])
+//        } catch {
+//            print(error)
+//        }
     }
     
     
