@@ -9,6 +9,7 @@
 import UIKit
 import CoreML
 import Vision
+import Firebase
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
